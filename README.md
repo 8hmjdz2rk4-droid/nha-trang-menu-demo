@@ -1,11 +1,53 @@
-<div align="center">
+# NHA TRANG MENU — Digital Restaurant Menu
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Коммерческий веб-сайт цифрового меню для ресторанов в Нячанге (Вьетнам).
+Разработано для быстрого открытия по QR-коду на столике со смартфона гостя (Mobile-first iPhone UX).
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 Быстрый запуск на компьютере
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. Распакуйте архив с проектом.
+2. В терминале в папке проекта установите зависимости:
+   ```bash
+   npm install
+   ```
+3. Запустите локальный сервер разработки:
+   ```bash
+   npm run dev
+   ```
+4. Откройте в браузере: `http://localhost:3000`
 
-</div>
+---
+
+## 📦 Сборка для продакшна
+
+Чтобы создать оптимизированный статический сайт:
+```bash
+npm run build
+```
+Готовые файлы для загрузки на хостинг появятся в папке **`dist/`**.
+
+---
+
+## 🌐 Как бесплатно опубликовать в интернете за 1 минуту
+
+### Вариант 1: Netlify Drop (без консоли и без регистрации)
+1. Откройте сайт [app.netlify.com/drop](https://app.netlify.com/drop).
+2. Перетащите папку **`dist`** из проекта прямо в окно браузера.
+3. Через 10 секунд вы получите работающую публичную HTTPS-ссылку (например: `https://nha-trang-menu.netlify.app`).
+
+### Вариант 2: Vercel
+1. Установите Vercel CLI: `npm i -g vercel`
+2. Выполните в папке проекта: `vercel`
+
+---
+
+## 🛠 Как настроить меню под новый ресторан
+
+Все данные заведения собраны в одном файле:
+* **`src/restaurantConfig.ts`** — название, контакты, WhatsApp, Zalo, часы работы, Wi-Fi и адрес.
+* **`src/menuData.ts`** — блюда, цены в VND, фотографии, состав и аллергены.
+* **`src/translations.ts`** — переводы интерфейса (English, Русский, Tiếng Việt).
+
+Изменение этих файлов не требует правок в программном коде интерфейса.

@@ -1,0 +1,6 @@
+{
+  "name": "NHA TRANG MENU - Digital Restaurant Menu",
+  "description": "Commercial digital menu solution for restaurants in Nha Trang, Vietnam. Mobile-first, trilingual (EN, RU, VI), QR-ready with dish details and staff assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
